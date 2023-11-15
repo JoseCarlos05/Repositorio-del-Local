@@ -1,0 +1,21 @@
+def permuta(num1, num2):
+    save = num1
+    num1 = num2
+    num2 = save
+    return num1, num2
+
+
+print('Permutador iniciado:')
+
+val1 = int(input('Introduce el primer valor: '))
+val2 = int(input('Introduce el segundo valor: '))
+
+pval1, pval2 = permuta(val1, val2)
+
+print('Los valores han sido intercambiados:')
+
+print('Primer valor:', pval1)
+
+print('Segundo valor:', pval2)
+
+
